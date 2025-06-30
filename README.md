@@ -21,7 +21,9 @@ maincode/
 │   │   └── DecoderBlock.py
 │   ├── BertExtract.py      # The main framework of our model
 │   └── BertFeatures.py     # The implementation of the feature extractor
-├── main.py     # the main code of our model
-├── train.py    # model training setting
-└── evaluate.py # model evaluating setting
+├── main.py       # the main code of our model
+├── train.py      # model training setting
+├── evaluate.py   # model evaluating setting
+└── evaluation.py # the metrics of the performance of our model
+
 ~~~
