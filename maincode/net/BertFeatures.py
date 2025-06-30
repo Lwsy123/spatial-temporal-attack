@@ -1,23 +1,10 @@
 import math
-from einops import rearrange
-from einops.layers.torch import Rearrange
 import torch
 from torch import nn
 import numpy as np
 from d2l import  torch as d2l
 from torch.nn import Linear, Conv1d, MaxPool1d, BatchNorm1d
-
-from Util.FeatureBlock import CNN_Block
-from Util.ACResidualBlock import  ACResidualBlock
-from Util.ACmix import ACmix
-from Util.ResidualBlock import ResidualBlock
 from torch.nn import functional as F
-from Util.dicL.DLearing import DicLearning
-from Util.utils import transpose_output, transpose_qkv
-from .regression import cnnreg
-from .selectlayer import allget
-from .Globalpool import GlobalPool
-from .multilayer.topMultiAttetion import TopMultiAttention
 
 filter_num = [32,64,128, 256,512]
 kernel_size = [7,7,7,7]
