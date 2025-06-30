@@ -16,12 +16,12 @@ maincode/
 │                  multi-head attention
 │
 ├── net/
-│   ├── TransformerDecoder/
-│   │   ├── Encoder.py 
-│   │   └── BertLayer.py
-│   └── Encoder/
-│
-└── dir3/
-    ├── file4.ext
-    └── file5.ext
+│   ├── TransformerDecoder/ # The implementation of the feature integration and correlation denoising
+│   │   ├── Decoder.py 
+│   │   └── DecoderBlock.py
+│   ├── BertExtract.py # The main framework of our model
+│   └── BertFeatures.py # The implementation of the feature extractor
+├── main.py # the main code of our model
+├── train.py # model training setting
+└── evaluate.py # model evaluating setting
 ~~~
