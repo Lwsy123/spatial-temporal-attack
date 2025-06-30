@@ -8,16 +8,18 @@ overlapping dataset: https://drive.google.com/drive/folders/1BRK21au25DiLJCjna0K
 The "maincode" directory contains the prototype of our model.
 
 ~~~
-project-name/
+maincode/
 │
-├── dir1/
-│   ├── file1.ext
-│   └── file2.ext
+├── Util/ 
+│   ├── Dataloader.py # The "dataloader.py" is used to generate the train and test dataloaders
+│   └── utils.py # The "utils.py" contains the functions that are used by our model, such as the function that generates Q, K, and V used in 
+│                  multi-head attention
 │
-├── dir2/
-│   ├── sub-dir1/
-│   │   └── file3.ext
-│   └── sub-dir2/
+├── net/
+│   ├── TransformerDecoder/
+│   │   ├── Encoder.py 
+│   │   └── BertLayer.py
+│   └── Encoder/
 │
 └── dir3/
     ├── file4.ext
