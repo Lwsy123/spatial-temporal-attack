@@ -2,7 +2,10 @@
 ## Dataset
 We collect a single-label dataset and  merge instances from different websites at different overlapping rates.
 
-overlapping dataset: https://drive.google.com/drive/folders/1BRK21au25DiLJCjna0KfiOfzmQMZsmiL?usp=sharing
+overlapping dataset: https://drive.google.com/drive/folders/1J95UaR3_b_hEg1HX3OKS9Nc22Vg5zWYo?usp=sharing
+There are two datasets: synthetic and real-world. 
+In the synthetic folder, there are train and test datasets for a single tab. We provide the Python code for mergeing single-tab dataset. You can use this to construct your own dataset.  
+In the real-world folder, there are six 2-tab datasets. They are collected  in the real-world. The names of .npy files are based on their tab-opening time gaps, ranging from 0s to 60s.
 
 ## Model
 The "maincode" directory contains the prototype of our model.
