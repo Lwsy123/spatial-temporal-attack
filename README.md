@@ -8,7 +8,8 @@ There are two datasets: synthetic and real-world.
 
 In the "synthetic" folder, there are train and test datasets for a single tab. We provide the Python code for mergeing single-tab dataset. You can use this to construct your own dataset. 
 
-In the "real-world" folder, there are seven 2-tab tab-opening time gap datasets and one 2-tab Firefox dataset. They are collected  in the real-world. The names of the tab-opening time gap dataset are based on their tab-opening time gaps, ranging from 0s to 60s. Moreover, we also provide a cross-protocol dataset, called "firefox.npy". This dataset is collected from the HTTPs protocol and consists of the same websites as the Tor dataset. 
+In the "real-world" folder, there are eight 2-tab datasets. They are collected in the real-world. These datasets delve into the Tor and Firefox datasets.
+The names of the Tor dataset are based on the time gaps between tab openings, ranging from 0s to 60s. Moreover, we also provide a cross-protocol dataset, called "firefox.npy". This dataset is collected from the HTTPs protocol and consists of the same websites as the Tor dataset. 
 
 The real-world dataset is collected from 15 hosts located in different regions. We totally collect more than 110,000 traces in one month and finally retain 90,000 valid traces (without Cloudflare banner and timeouts). Moreover, to select the valid traces, we train a Resnet-based website filter, filtering the invalid trace base on screenshots of websites.
 
